@@ -1,6 +1,15 @@
 { config, pkgs, ... }:
-
 {
+  imports = [
+    ./git.nix
+  ];
+
+  opnix = {
+    secrets = {
+      user.password = "{{ op://System Account?attribute=password }}";
+    };
+  };
+
   users.mutableUsers = false;
   users.users.jason = {
     uid = 1000;
@@ -10,5 +19,6 @@
       "wheel"
       "networkmanager"
     ];
+    password = config.opnix.secrets.user.password;
   };
 }

@@ -6,12 +6,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    opnix = {
+      url = "github:mrjones2014/opnix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { home-manager, nixpkgs, ...}:
+  outputs = { home-manager, nixpkgs, opnix, ... }:
   {
     nixosConfigurations.cube = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
+        opnix.nixosModules.default
         ./machines/cube/configuration.nix
         home-manager.nixosModules.home-manager {
           home-manager.useUserPackages = true;
