@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 {
   opnix = {
     environmentFile = "/etc/opnix.env";
