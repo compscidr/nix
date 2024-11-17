@@ -9,7 +9,7 @@
   };
   outputs = { home-manager, nixpkgs, ...}:
   {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.cube = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./machines/cube/configuration.nix
@@ -17,8 +17,8 @@
           home-manager.useUserPackages = true;
           home-manager.users.return12 = {
             imports = [
-              ./modules/default.nix
-              ./modules/gui.nix
+              ./modules/home/default.nix
+              ./modules/home/gui.nix
             ];
           };
         }
