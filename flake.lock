@@ -62,15 +62,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1731422265,
-        "narHash": "sha256-NdHiX2YfkWeZYZ01k0/MCO11+agJry7ssYkpdwdHi28=",
-        "owner": "mrjones2014",
+        "lastModified": 1729614896,
+        "narHash": "sha256-/tsz52IuVu1qWQepjHYiROXcJltRKFRUQVrfZRgFyso=",
+        "owner": "zvictor",
         "repo": "opnix",
-        "rev": "eee9f3e2c61418afb765c2eb63c004b55976f608",
+        "rev": "99d9ef24e11a3421d4c9716608dcc39ed5b759c4",
         "type": "github"
       },
       "original": {
-        "owner": "mrjones2014",
+        "owner": "zvictor",
         "repo": "opnix",
         "type": "github"
       }

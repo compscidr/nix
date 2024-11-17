@@ -7,7 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     opnix = {
-      url = "github:mrjones2014/opnix";
+      url = "github:zvictor/opnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -26,6 +26,8 @@
               ./modules/home/default.nix
               ./modules/home/gui.nix
             ];
+            
+            home.stateVersion = "24.05";
           };
         }
       ];

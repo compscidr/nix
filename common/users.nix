@@ -4,7 +4,7 @@
     environmentFile = "/etc/opnix.env";
     secrets = {
       secret.source = ''
-        jason:{{ op://Infrastructure/System Account?attribute=password }}"
+        jason:{{ op://Infrastructure/System Account?attribute=text }}"
       '';
       secret.path = "/etc/passwd/jason";
     };
@@ -19,6 +19,6 @@
       "wheel"
       "networkmanager"
     ];
-    passwordFile = config.opnix.secrets.secret.path;
+    hashedPasswordFile = config.opnix.secrets.secret.path;
   };
 }
