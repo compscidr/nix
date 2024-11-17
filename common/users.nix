@@ -1,15 +1,15 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
-  imports = [
-    ./git.nix
-  ];
-
   opnix = {
+    environmentFile = "/etc/opnix.env";
     secrets = {
-      user.password = "{{ op://System Account?attribute=password }}";
+      secret.source = ''
+        jason:{{ op://Infrastructure/System Account?attribute=password }}"
+      '';
+      secret.path = "/etc/passwd/jason";
     };
   };
-
+  
   users.mutableUsers = false;
   users.users.jason = {
     uid = 1000;
@@ -19,6 +19,6 @@
       "wheel"
       "networkmanager"
     ];
-    password = config.opnix.secrets.user.password;
+    passwordFile = config.opnix.secrets.secret.path;
   };
 }

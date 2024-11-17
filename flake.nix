@@ -18,6 +18,7 @@
       modules = [
         opnix.nixosModules.default
         ./machines/cube/configuration.nix
+        ./common/users.nix
         home-manager.nixosModules.home-manager {
           home-manager.useUserPackages = true;
           home-manager.users.jason = {
