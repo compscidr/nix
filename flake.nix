@@ -15,7 +15,7 @@
         ./machines/cube/configuration.nix
         home-manager.nixosModules.home-manager {
           home-manager.useUserPackages = true;
-          home-manager.users.return12 = {
+          home-manager.users.jason = {
             imports = [
               ./modules/home/default.nix
               ./modules/home/gui.nix

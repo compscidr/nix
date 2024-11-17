@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   imports = [
-    ./1password.nix
   ];
 
   home.packages = with pkgs; [
