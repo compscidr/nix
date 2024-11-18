@@ -6,6 +6,8 @@
 - Run `nixos-rebuild switch`
 - clone this repo, change to the directory it is cloned to
 - Run `nixos-rebuild switch --upgrade --flake '.#cube' --use-remote-sudo`
+- Sign into 1password
+- Switch git repo from http -> ssh
 
 ## Guides and Inspirations
 - https://www.return12.net/posts/bootstrapping-nixos/
