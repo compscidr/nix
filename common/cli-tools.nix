@@ -8,5 +8,6 @@
     wget         # alternative to curl
     # sqlite3    # doesn't exist on nix. useful for dev work
     cheat        # interactive cheatsheets on the cli
+    xclip        # access the x clipbopard from cli
   ];
 }
