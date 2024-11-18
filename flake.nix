@@ -21,6 +21,7 @@
         ./common/users.nix
         ./common/firefox.nix
         ./common/openssh.nix
+        ./common/network-tools.nix
         home-manager.nixosModules.home-manager {
           home-manager.useUserPackages = true;
           home-manager.users.jason = {
