@@ -9,5 +9,11 @@
     # sqlite3    # doesn't exist on nix. useful for dev work
     cheat        # interactive cheatsheets on the cli
     xclip        # access the x clipbopard from cli
+    fish         # alternative shell
+    powerline    # statusline / prompt utility
+    tmux         # terminal multiplexer
+    byobu        # window manager and terminal multiplexer
+    neofetch     # system info script
+    screen       # multiplexing terminal
   ];
 }
