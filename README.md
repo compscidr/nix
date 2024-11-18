@@ -11,3 +11,4 @@
 
 ## Guides and Inspirations
 - https://www.return12.net/posts/bootstrapping-nixos/
+- https://nix.dev/guides/best-practices
