@@ -17,6 +17,15 @@
       user = {
         signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGDMaQs+szAMlBHJk07vZf7HUUjOUExOQCeVLd7Lg+mD";
       };
+      pull = {
+        rebase = true;
+      };
+      init = {
+         defaultBranch = "main"
+      };
+      push = {
+        default = "current";
+      };
     };
   };
 }
