@@ -5,7 +5,7 @@
 - Update the `/etc/nixos/configuration.nix` to add `git`
 - Run `nixos-rebuild switch`
 - clone this repo, change to the directory it is cloned to
-- Run `nixos-rebuild switch --upgrade --flake '.#cube' --use-remote-sudo`
+- Run `nixos-rebuild switch --upgrade --flake '.#<machine-name>' --use-remote-sudo`
 - Sign into 1password
 - Switch git repo from http -> ssh
 
