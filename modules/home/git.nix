@@ -21,7 +21,7 @@
         rebase = true;
       };
       init = {
-         defaultBranch = "main"
+         defaultBranch = "main";
       };
       push = {
         default = "current";
