@@ -2,6 +2,7 @@
 {
   imports = [
     ./git.nix
+    ./nano.nix
   ];
 
   home.packages = with pkgs; [
