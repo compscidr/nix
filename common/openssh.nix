@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   services.openssh = {
-    enable = true
+    enable = true;
     settings.PasswordAuthentication = false;
     settings.KbdInteractiveAuthentication = false;
   };
