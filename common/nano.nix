@@ -5,5 +5,6 @@
       set linenumbers true
       set guidestripe 80
     '';
+    syntaxHighlight = true;
   };
 }
