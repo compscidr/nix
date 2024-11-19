@@ -23,6 +23,7 @@
         ./common/openssh.nix
         ./common/network-tools.nix
         ./common/cli-tools.nix
+        ./common/vscode.nix
         home-manager.nixosModules.home-manager {
           home-manager.useUserPackages = true;
           home-manager.users.jason = {
