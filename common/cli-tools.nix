@@ -15,6 +15,8 @@
     byobu        # window manager and terminal multiplexer
     neofetch     # system info script
     screen       # multiplexing terminal
+    unzip        # extract .zip files
+    fzf		 # command-line fuzzy finder
   ];
 
   programs.nano = {
